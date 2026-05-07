@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Classmates System</title>
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+<script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'PT Sans', Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #7B1C1C;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+header h1 { margin: 0; font-size: 2.5rem; }
+header p { margin: 8px 0 0; font-size: 1rem; opacity: 0.85; }
+nav {
+    background: #5a1414;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+nav a:hover { background: #7B1C1C; }
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.form-box {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+.form-box h2 { color: #7B1C1C; margin: 0 0 20px; }
+input[type="text"] {
+    padding: 10px 14px;
+    margin: 6px 8px 6px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    width: 200px;
+}
+input[type="text"]:focus { border-color: #7B1C1C; }
+button {
+    padding: 10px 22px;
+    background: #7B1C1C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-family: 'PT Sans', Arial, sans-serif;
+    margin: 6px 4px;
+    transition: background 0.2s;
+}
+button:hover { background: #a02020; }
+#output {
+    background: white;
+    border-radius: 10px;
+    padding: 24px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    min-height: 60px;
+}
+footer {
+    text-align: center;
+    padding: 24px;
+    color: #aaa;
+    font-size: 0.85rem;
+    margin-top: 60px;
+    border-top: 1px solid #ddd;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Grade 10 — Ruby</h1>
+  <p>ICT10 Project &bull; Fourth Quarter &bull; AY 2025&ndash;2026</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="classmates.html">Classmate List</a>
+  <a href="attendance.html">Attendance Tracker</a>
+  <a href="photos.html">Class Photos</a>
+</nav>
+
+<div class="container">
+  <div class="form-box">
+    <h2>Grade 10 Classmates System</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="section" placeholder="Section">
+    <input type="text" id="subject" placeholder="Favorite Subject">
+    <br>
+    <button py-click="add_classmate">Add Classmate</button>
+    <button py-click="show_classmates">Show List</button>
+  </div>
+  <div id="output"></div>
+</div>
+
+<script type="py" src="classmates.py"></script>
+
+<footer>
+  &copy; 2026 Grade 10-Ruby &bull; O.B. Montessori Center Fairview &bull; ICT10 Q4 Project
+</footer>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Class Photos | 10-Ruby</title>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'PT Sans', Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #7B1C1C;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+header h1 { margin: 0; font-size: 2.5rem; }
+header p { margin: 8px 0 0; font-size: 1rem; opacity: 0.85; }
+nav {
+    background: #5a1414;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+nav a:hover { background: #7B1C1C; }
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.container h2 {
+    color: #7B1C1C;
+    margin-bottom: 24px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+.photo-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.photo-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+.photo-info {
+    padding: 14px 16px;
+}
+.photo-info strong {
+    display: block;
+    color: #7B1C1C;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+.photo-info p {
+    color: #666;
+    font-size: 0.88rem;
+    margin: 0;
+    line-height: 1.5;
+}
+footer {
+    text-align: center;
+    padding: 24px;
+    color: #aaa;
+    font-size: 0.85rem;
+    margin-top: 60px;
+    border-top: 1px solid #ddd;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Grade 10 — Ruby</h1>
+  <p>ICT10 Project &bull; Fourth Quarter &bull; AY 2025&ndash;2026</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="classmates.html">Classmate List</a>
+  <a href="attendance.html">Attendance Tracker</a>
+  <a href="photos.html">Class Photos</a>
+</nav>
+
+<div class="container">
+  <h2>Class Achievements &amp; Activities</h2>
+  <div class="gallery">
+
+    <div class="photo-card">
+      <img src="al_hamzi.jpg">
+      <div class="photo-info">
+        <strong>Ebtisam</strong>
+        <p>Goofy</div>
+    </div>
+    <div class="photo-card">
+      <img src="alvarez.png"> 
+      <div class="photo-info"
+        <strong>Aeiou</strong>
+        <p>Philippine Model Congress</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="belsa.jpg">
+      <div class="photo-info">
+        <strong>Ethan</strong>
+        <p>Volleyball</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="bernas.jpeg"> 
+      <div class="photo-info">
+        <strong>Giana</strong>
+        <p>Science Club Lab Group Photo</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="calaycay.jpeg">
+      <div class="photo-info">
+        <strong>Koreen</strong>
+        <p>Science Club Lab Group Photo</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="castelo.png">
+      <div class="photo-info">
+        <strong>Jamie</strong>
+        <p>Selfie with Sir Aljo</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="cruz.jpg">      
+      <div class="photo-info">
+        <strong>Meyer</strong>
+        <p>Dance club</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="defensor.JPG">      
+      <div class="photo-info">
+        <strong>Ely</strong>
+        <p>10-Ruby Christmas Party</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="dimasuhid.png">
+      <div class="photo-info">
+        <strong>Luna</strong>
+        <p>Glee Club</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="francisco.png">
+      <div class="photo-info">
+        <strong>Althea</strong>
+        <p>Selfie with Sir aljo<p>
+       </div>
+    </div>
+    <div class="photo-card">
+      <img src="">      
+      <div class="photo-info">
+        <strong>Hsu</strong>
+        <p></p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="juatchon.jpg">      
+      <div class="photo-info">
+        <strong>Denise</strong>
+        <p>Picutre with Trisha</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="">
+      <div class="photo-info">
+        <strong>Judah</strong>
+        <p></p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="Lilagan.jpeg">
+      <div class="photo-info">
+        <strong>Francis</strong>
+        <p>Officer Awarding</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="luna.jpg">
+      <div class="photo-info"> 
+        <strong>Sam</strong>
+        <p>Public speaking</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="macaranas.jpeg">
+      <div class="photo-info">
+        <strong>Enzo</strong>
+        <p>MUN at Xavier</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="mateo.jpeg">
+      <div class="photo-info">
+        <strong>Pain</strong>
+        <p>Marching band</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="mondragon.jpg">
+      <div class="photo-info">
+        <strong>Ashley</strong>
+        <p>Marching Bad</p>
+        </div>
+    </div>
+    <div class="photo-card">
+      <img src="naldoza.jpeg">
+      <div class="photo-info">
+        <strong>Lance</strong>
+        <p>Math Club</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="natividad.png">
+      <div class="photo-info">
+        <strong>Gab</strong>
+        <p>Candidacy</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="ng.jpg">
+      <div class="photo-info">
+        <strong>Sofia</strong>
+        <p>Science Club</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="paz.jpg">
+      <div class="photo-info">
+        <strong>Trisha</strong>
+        <p>Top Scorer in SS Exam</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="ramosm.jpg">
+      <div class="photo-info">
+        <strong>Miguel</strong>
+        <p>CAT Outreach Program</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="ramoss.PNG">
+      <div class="photo-info">
+        <strong>Samantha</strong>
+        <p>Gold Award</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="ramosq.JPG">
+      <div class="photo-info">
+        <strong>Queeny</strong>
+        <p>Host for school Event</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="reodica.png">
+      <div class="photo-info">
+        <strong>Ashlei</strong>
+        <p>Intrams 25-26</p>
+      </div>
+    </div>
+    <div class="photo-card">
+      <img src="repolona.jpg">
+      <div class="photo-info">
+        <strong>Vaughn</strong>
+        <p>Science Photo Competition</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 Grade 10-Ruby &bull; O.B. Montessori Center Fairview &bull; ICT10 Q4 Project
+</footer>
+</body>
+</html>
